@@ -1,0 +1,105 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/*estilos param botones personalizados*/
+
+.custom-navbar {
+    background-color: #00F0E8; /* Color agua marina suave */
+}
+
+.crud-button {
+    color: #333;
+    border-color: #ccc;
+    transition: all 0.3s ease;
+}
+
+    .crud-button:hover {
+        color: #fff;
+    }
+
+.btn-outline-primary {
+    background-color: #b8daff;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #2196f3;
+    }
+
+.btn-outline-info {
+    background-color: #b3e5fc;
+}
+
+    .btn-outline-info:hover {
+        background-color: #03a9f4;
+    }
+
+.btn-outline-warning {
+    background-color: #ffe0b2;
+}
+
+    .btn-outline-warning:hover {
+        background-color: #ff9800;
+    }
+
+.btn-outline-danger {
+    background-color: #ffccbc;
+}
+
+    .btn-outline-danger:hover {
+        background-color: #f44336;
+    }
+
+
+.nav-button {
+    color: #333;
+    border-color: #ccc;
+    transition: all 0.3s ease;
+}
+
+    .nav-button:hover {
+        color: #fff;
+    }
+
+.btn-outline-danger {
+    background-color: #ffccbc;
+}
+
+    .btn-outline-danger:hover {
+        background-color: #f44336;
+    }
+
+.btn-outline-secondary {
+    background-color: #e0e0e0;
+}
+
+    .btn-outline-secondary:hover {
+        background-color: #9e9e9e;
+    }
+
+.btn-outline-success {
+    background-color: #c8e6c9;
+}
+
+    .btn-outline-success:hover {
+        background-color: #4caf50;
+    }

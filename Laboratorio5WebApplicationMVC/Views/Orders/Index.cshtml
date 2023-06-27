@@ -1,0 +1,49 @@
+﻿@model Laboratorio5WebApplicationMVC.Models.OrderDTO
+
+<h1>Order Details</h1>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderNumber)
+        </dd>
+        <!-- Add more fields as necessary -->
+    </dl>
+</div>
+
+<h2>Order Items</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderItems[0].ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderItems[0].Quantity)
+            </th>
+            <!-- Add more fields as necessary -->
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderItems)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <!-- Add more fields as necessary -->
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>
